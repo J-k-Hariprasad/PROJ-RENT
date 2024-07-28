@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Faster+One&family=Honk&family=Merienda:wght@300..900&family=Monoton&family=Press+Start+2P&family=Rubik+Mono+One&family=Silkscreen:wght@400;700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Viga&display=swap');
+
+.footer {
+    background-color: #2d3a45;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-icons {
+    margin-bottom: 10px;
+  }
+  
+  .footer-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .footer-icons a:hover {
+    color: #ffa500; /* Optional: Add a hover effect */
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-brand {
+    font-size: 50px;
+    margin-bottom: 5px;
+    font-family: Honk;
+  }
+  
+  .footer-copyright {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
