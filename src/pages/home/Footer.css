@@ -53,4 +53,56 @@
   .footer-links a:hover {
     text-decoration: underline;
   }
+
+  /* ==================== */
+
+  .container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: darkblue;
+  }
+  .oopp{
+    font-weight: 700;
+    font-family:Source Code Pro;
+    color: #ffffff;
+    background-color: #062544;
+    font-size: 40px;
+  }
+  .oopp{
+    display: flex;
+  }
+  .steps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    grid-column-start: 0;
+    grid-column-end: 4;
+  }
+  
+  .step {
+    margin: 30px 10px;
+    padding: 20px;
+    font-family: Viga;
+    width: 200px;
+    text-align: center;
+    border: 5px dashed #042874;
+ 
+  }
+  
+  
+  .step img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 14px;
+  }
   

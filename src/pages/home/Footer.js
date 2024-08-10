@@ -1,12 +1,13 @@
 import React from 'react';
+import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome if not done globally
 import './Footer.css';
 
-const Footer = () => {
+const Footer = ({ id }) => {
   return (
-    <footer className="footer">
+    <footer className="footer" id={'id'}>
       <div className="footer-icons">
         <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-facebook"></i>
+          <i className="fab fa-facebook-f"></i>
         </a>
         <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-instagram"></i>
@@ -18,13 +19,7 @@ const Footer = () => {
           <i className="fab fa-twitter"></i>
         </a>
         <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-linkedin"></i>
-        </a>
-        <a href="https://www.medium.com" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-medium"></i>
-        </a>
-        <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-tiktok"></i>
+          <i className="fab fa-linkedin-in"></i>
         </a>
       </div>
       <div className="footer-content">

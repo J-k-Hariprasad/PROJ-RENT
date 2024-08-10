@@ -14,7 +14,7 @@ function Admin()
 
     const handleBackToLogin = () => {
         setPopupVisible(false);
-        navi('Admindash')
+        navi('/admin/admindash')
     };
 
     return(

@@ -1,26 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Faster+One&family=Honk&family=Merienda:wght@300..900&family=Monoton&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Faster+One&family=Merienda:wght@300..900&family=Monoton&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Calistoga&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Monoton&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Calistoga&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Akronim&family=Faster+One&family=Honk&family=Merienda:wght@300..900&family=Monoton&family=Press+Start+2P&family=Silkscreen:wght@400;700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
-.kl
-{
-    margin: 0;
-	padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Calistoga&family=Libre+Barcode+128+Text&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Calistoga&family=Libre+Barcode+128+Text&family=Libre+Barcode+39+Extended+Text&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+.di{
 	display: flex;
-	justify-content: center;
+	flex-direction: row;
+}
+.oppp{
+	display: flex;
+	background-color: #114dbc;
+	
+}
+.kl1
+{
+	flex-direction: row;
+	margin: 0% 0% 0% 15%;
+	background-color: #ffffff;
+	display: flex;
 	align-items: center;
 	min-height: 100vh;
-	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("https://i.pinimg.com/originals/d4/3c/11/d43c11d76c7db33af616426597e88833.gif")no-repeat center/ cover;
-	/* background: url("") no-repeat center/ cover; */
-
-    }
-.op1
-{
-    width: 350px;
-	/* height: auto; */
+}
+.im1{
+	width: 45%;
+	height: 45%;
 	border-radius: 10px;
-	backdrop-filter: blur(10px);
-	box-shadow: 5px 20px 50px #000;
+}
+.op11
+{
+	width: 160%;
+	height: 40%;
+	border-radius: 10px;
+	padding: auto;
 }
 
 #chk{
@@ -29,31 +41,36 @@
 .signup{
 	position: relative;
 	width:100%;
-	height: 120%;
+	height: 100%;
     border-radius: 20px;
 }
+.oplo
+{
+	justify-content: center;
+}
 label{
-	color:rgb(246, 248, 250);
+	
+	color:rgb(0, 0, 0);
 	font-size: 2.3em;
 	justify-content: center;
 	display: flex;
 	margin: 20px;
 	font-weight: bold;
 	cursor: pointer;
-    font-family: Silkscreen;
+    font-family:Oswald;
 }
 .hw{
     margin: 30px;
     transition: .5s ease-in-out;
-    color:rgb(234, 227, 227);
-    font-size: 3.3em;
+    color:rgb(1, 1, 1);
+    font-size: 2.4em;
     justify-content: center;
     display: flex;
-    font-family: Honk;
+	font-family:"Libre Barcode 128 Text";
 
 }
 input{
-	width: 70%;
+	width: 90%;
 	height: 25px;
 	background: #e0dede;
 	justify-content: center;
@@ -63,8 +80,11 @@ input{
 	border: none;
 	outline: none;
 	border-radius: 5px;
-    font-family:Merienda;
+	font-family:Source Code Pro;
 	
+}
+.signup button{
+	margin-left: 20%;
 }
 button{
 	width: 60%;
@@ -95,8 +115,20 @@ button:hover{
 
 .pt{
     font-family:Source Code Pro;
-	color: #ffffff;
+	color: #060505;
 	font-weight: 700;
+	text-align: center;
+}
+.pt1{
+	font-family:Source Code Pro;
+	text-align: center;
+	color: #1178ee;
+	text-decoration: dotted;
+	font-weight: 700;
+	cursor: pointer;
+}
+.pt1 :hover{
+	background-color:linear-gradient(to right,#5b9be4,#1178ee,#1141ee,#1111ee);
 }
 
 
@@ -125,3 +157,63 @@ button:hover{
     margin-bottom: 20px;
 }
 /* ----------------------------------------------- */
+
+
+
+/* login-sign.css */
+
+.Modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: '-50%';
+    transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: 'rgba(0, 0, 0, 0.75)';
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	padding: 20px;
+}
+.modal-content h2{
+	font-size: medium;
+	/* font-family:Source Code Pro; */
+}
+.modal-content img{
+	width:100px;
+}
+.pattu {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pattu button {
+    font-family: Source Code Pro;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Adjust the width to fit the button content */
+}
+
+

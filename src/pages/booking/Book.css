@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Calistoga&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
+
+.kq {
+  
+    margin: 0% 0% 0% 15%;
+    justify-content: center;
+    align-items: center;
+    background-color: #03346E;
+    display: flex;
+    min-height: 100vh;
+   
+}
+
+.op{
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+}
+.opp{
+    display: flex;
+	background-color: #03346E;
+    width: 500px;
+    margin-left: 25%;
+    /* margin-top: 20px; */
+    border: 5px dashed #b6c0d5;
+	
+}
+.im{
+	width: 30%;
+	/* height: 45%; */
+	border-radius: 10px;
+    position: fixed;
+    display: flex;
+    margin-left: -22%;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.fo {
+    width: 45%;
+    font-weight: 900;
+    font-family:Source Code Pro;
+    color: #ffffff;
+    font-size: 15px;
+    /* justify-content: center; */
+}
+
+.da2 {
+    width: 100%;
+    height: 35px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-family:Source Code Pro;
+}
+.sig{
+    display: flex;
+    width: 100%;
+    padding: 5px;
+}
+.signu {
+    position: relative;
+    width: 120%;
+    height: 100%;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.hf {
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 900;
+    font-family:Source Code Pro;
+}
+
+.nput {
+    width: 100%;
+    height: 35px;
+    background: #f0f0f0;
+    margin-bottom: 15px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-family:Source Code Pro;
+}
+
+.nput1 {
+    /* font-size: 10px; */
+    width: 45%;
+    height: 40px;
+    background: #f0f0f0;
+    margin-bottom: 15px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-family:Source Code Pro;
+}
+.nput11 {
+    /* font-size: 10px; */
+    width: 58%;
+    height: 40px;
+    background: #f0f0f0;
+    margin-bottom: 15px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 28px;
+    font-family:Source Code Pro;
+}
+
+.utton {
+    width: 100%;
+    height: 45px;
+    color: #fff;
+    background-color: #114dbc;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family:Source Code Pro;
+    transition: background 0.3s ease;
+    margin: 0%;
+}
+
+.utton:hover {
+    background: hsl(0, 0%, 100%);
+    color: #114dbc;
+}
+
+form {
+    padding: 20px;
+}
+
+/* ]]]]]]]]]]]]]]]]] */
+
+
+.price-details {
+    display: flex;
+    justify-content: center;
+}
+.price-details p{
+    /* width: 100%; */
+    height: 35px;
+    color: #f0f0f0;
+    margin-bottom: 15px;
+    padding: 5px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    font-family:Source Code Pro;
+}
+/* ========= */
+.Modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: '-50%';
+    transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: 'rgba(0, 0, 0, 0.75)';
+}
+
+.modal-conten {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+}
+.modal-conten h2{
+	font-size: medium;
+}
+.modal-conten img{
+	width:100px;
+}
+
+.modal-conten button {
+	font-family:Source Code Pro;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	margin: 0%;
+}

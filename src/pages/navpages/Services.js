@@ -1,5 +1,6 @@
 import React from 'react';
 import './Services.css';
+import Navi from '../home/nav/Navi';
 
 const Service = () => {
     const features = [
@@ -15,8 +16,11 @@ const Service = () => {
     ];
     return (
         <div>
+            <Navi/>
+            <div className='oke'>
+
             <div className="container">
-                <h1>Why Self Drive Car Rental In Coimbatore At Royalpicks</h1>
+                <h1>Why Self Drive Car Rental At Rent'N Roll</h1>
                 <div className="features">
                     <div className="feature">
                         <div className="icon">🌟</div>
@@ -50,6 +54,7 @@ const Service = () => {
             </div>
         </div>
         </div>
+            </div>
     );
 };
 

@@ -4,112 +4,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Akronim&family=Faster+One&family=Honk&family=Merienda:wght@300..900&family=Monoton&family=Press+Start+2P&family=Rubik+Mono+One&family=Silkscreen:wght@400;700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Viga&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
-.nav
-{
-    display: flex;
-    background-color: black;
-    /* position: fixed; */
-    z-index: 10;
-    color: black;
-    width: 100%;
-}
-.nav p{
-    font-family: Honk;
-    font-size: 40px;
-    margin: 10px ;
-    text-decoration: none;
-}
-.na{
-    font-size: 30px;
-    margin: 10px ;
-    font-family:Akronim;
-    color: aliceblue;
-    float:right;
-}
-
-.ol2
-{
-    padding-left: 0;
-}
-.ol
-{
-    display: flex;
-    font-family: Silkscreen;
-    color: aliceblue;
-    justify-content: center;
-	/* margin-top: 20px; */
-    padding: 15px;
-
-}
-.ol a{
-    color: #ffffff;
-    float: right;
-    font-size: 15px;
-    text-decoration: none;
-    padding: 10px;
-}
-.ol a:hover{
-    
-    background-color: aliceblue;
-    color: #000;
-    cursor: pointer;
-    border-radius: 5px;
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 
-/* ------------------------------------------- */
-.ok{
-}
+.main-content
+{ padding: 40px 0px 0px 0px;}
+
+
 .ol2{
     display: flex;
     flex-wrap: wrap;
     grid-column-start: 0;
     grid-column-end: 4;
-    background-color: #2196F3;
+    background-color: #F5F5F5;
+    background-color:rgb(251, 251, 252);
     align-items: center;
     justify-content: center;
 	align-items: center;
 }
 .head{
     font-weight: 700;
-    font-family: Viga;
+    font-family:Source Code Pro;
     color: #ffffff;
-    background-color: #031a2d;
+    background-color: #062544;
     font-size: 40px;
+    text-align: center;
 }
-.card {
-    margin: 8px;
-    background-color: rgb(48, 43, 43);
+.card12{
+    margin: 10px;
+   
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #021526d6;
+    box-shadow: 0 4px 8px rgba(179, 19, 19, 0.1);
     text-align: center;
     padding: 20px;
     width: 250px;
     position: relative;
 }
-.card:hover{
-    background-color: rgb(80, 77, 77);
+.card12:hover{
+    background-color: #03346E;
     color: aliceblue;
-
 }
-.card p{
-    color: aliceblue;
-    font-family:Arsenal SC ;
+.card12 p{
+    color: rgb(255, 255, 255);
+    font-family:Source Code Pro;
 }
-.card h3{
+.card12 h3{
     color:#ffffff;
-}
-
-
-.save {
-    background-color: #70C050;
-    color: white;
-    border-radius: 5px;
-    padding: 5px 10px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    font-family:Source Code Pro;
 }
 
 .price {
@@ -127,17 +69,18 @@ img {
 }
 
 .book-now {
-    background-color: #70C050;
+    background-color: #03346E;
     color: white;
     border: none;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
+    margin: 0%;
 }
 
 .book-now:hover {
-    color: #5ea040;
+    color: #03346E;
     background-color: #ffffff;
 }
 

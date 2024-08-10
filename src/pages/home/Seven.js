@@ -1,102 +1,56 @@
-import '../home/Home.css'
-import harr from '../assert/pn (1).png'
-import xuv from '../assert/pn (2).png'
-import alc from '../assert/pn (3).png'
-import kia from '../assert/pn (4).png'
-import safa from '../assert/pn (5).png'
-import ear from '../assert/pn (6).png'
-import scar from '../assert/pn (7).png'
-import bolu from '../assert/pn (8).png'
-import { useNavigate } from 'react-router-dom';
-function Seven()
-{
-    const navigate=useNavigate();
 
-    const handlebook =()=>
-    {
-        navigate('/book');
-    }
-    return(
+import '../home/Home.css';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import { useState, useEffect } from 'react';
+
+function Seven() {
+    const [cars, setCars] = useState([]);
+
+    useEffect(() => {
+        async function fetchCars() {
+            try {
+                const response = await axios.get('http://localhost:9001/cars/byType/seven');
+                setCars(response.data);
+            } catch (error) {
+                console.error('There was an error getting the car!', error);
+            }
+        }
+
+        fetchCars();
+    }, []);
+
+    const navigate = useNavigate();
+
+    const handleBook = (perday) => {
+        navigate('/book', { state: { perday } });
+    };
+
+    return (
         <div>
-    <div className='ok'>
-        <h2 className='head'>7 seater</h2>
-        <div className='ol2'>
-            <div className="card">
-                <h3>TATA HARRIER</h3>
-                <img src={harr} alt="Swift Dzire"/>
-                <div className="details">
-                    <p>&#10004; 24 Hours: ₹ 2000</p>
-                    <p>&#10004; Extra Hour: ₹ 300</p>
+            <div className='ok'>
+                <h2 className='head'>7 seater</h2>
+                <div className='ol2'>
+                    {cars.map((car, index) => (
+                        <div key={index} className="card12">
+                            <h3>{car.carname}</h3>
+                            {car.carimg && (
+                                <img 
+                                    src={`data:image/png;base64,${car.carimg}`} 
+                                    alt={car.carname} 
+                                    className="car-image" 
+                                />
+                            )}
+                            <div className="details">
+                                <p>Price Per Day (24hrs): ₹{car.perday}</p>
+                            </div>
+                            <button onClick={() => handleBook(car.perday)} className="book-now">Book Now</button>
+                        </div>
+                    ))}
                 </div>
-                <button onClick={handlebook} className="book-now" >Book Now</button>
-            </div>       
-            <div className="card">
-                <h3>MAHINDRA XUV700</h3>
-                <img src={xuv} alt="Swift Dzire"/>
-                <div className="details">
-                    <p>&#10004; 24 Hours: ₹ 2000</p>
-                    <p>&#10004; Extra Hour: ₹ 300</p>
-                </div>
-                <button onClick={handlebook} className="book-now" >Book Now</button>
-            </div>       
-            <div className="card">
-                <h3>HUNDAI ALCROZ</h3>
-                <img src={alc} alt="Swift Dzire"/>
-                <div className="details">
-                    <p>&#10004; 24 Hours: ₹ 2000</p>
-                    <p>&#10004; Extra Hour: ₹ 300</p>
-                </div>
-                <button onClick={handlebook} className="book-now" >Book Now</button>
-            </div>       
-            <div className="card">
-                <h3>KIA CARENS</h3>
-                <img src={kia} alt="Swift Dzire"/>
-                <div className="details">
-                    <p>&#10004; 24 Hours: ₹ 2000</p>
-                    <p>&#10004; Extra Hour: ₹ 300</p>
-                </div>
-                <button onClick={handlebook} className="book-now" >Book Now</button>
-            </div>       
-            <div className="card">
-                <h3>TATA SAFARRI</h3>
-                <img src={safa} alt="Swift Dzire"/>
-                <div className="details">
-                    <p>&#10004; 24 Hours: ₹ 2000</p>
-                    <p>&#10004; Extra Hour: ₹ 300</p>
-                </div>
-                <button onClick={handlebook} className="book-now" >Book Now</button>
-            </div>       
-            <div className="card">
-                <h3>MARUTHI SUZUKI ERTIGA</h3>
-                <img src={ear} alt="Swift Dzire"/>
-                <div className="details">
-                    <p>&#10004; 24 Hours: ₹ 2000</p>
-                    <p>&#10004; Extra Hour: ₹ 300</p>
-                </div>
-                <button onClick={handlebook} className="book-now" >Book Now</button>
-            </div>       
-            <div className="card">
-                <h3>MAHENDRA SCARPIO</h3>
-                <img src={scar} alt="Swift Dzire"/>
-                <div className="details">
-                    <p>&#10004; 24 Hours: ₹ 2000</p>
-                    <p>&#10004; Extra Hour: ₹ 300</p>
-                </div>
-                <button onClick={handlebook} className="book-now" >Book Now</button>
-            </div>       
-            <div className="card">
-                <h3>MAHENDRA BOLERO</h3>
-                <img src={bolu} alt="Swift Dzire"/>
-                <div className="details">
-                    <p>&#10004; 24 Hours: ₹ 2000</p>
-                    <p>&#10004; Extra Hour: ₹ 300</p>
-                </div>
-                <button onClick={handlebook} className="book-now" >Book Now</button>
-            </div>       
+            </div>
         </div>
-    </div>
-        
-    </div>
-    )
+    );
 }
+
 export default Seven;

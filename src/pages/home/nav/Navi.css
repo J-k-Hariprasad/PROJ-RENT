@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Calistoga&family=Libre+Barcode+128+Text&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Calistoga&family=Libre+Barcode+128+Text&family=Libre+Barcode+39+Extended+Text&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+.navbar
+{
+    display: flex;
+    background-color: #021526;
+    position: fixed;
+    z-index: 10;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px 0px 0px;
+}
+.nav p{
+    font-family:"Libre Barcode 128 Text";
+    font-size: 45px;
+    margin: 10px ;
+    text-decoration: none;
+    color: #ffffff;
+}
+.na{
+    font-size: 30px;
+    margin: 10px ;
+    font-family:Akronim;
+    color: aliceblue;
+    float:right;
+}
+.mbu 
+{
+    margin: 12px ;
+    justify-content: center;
+    color: aliceblue;
+    font-weight: 500;   
+    float: right;
+}
+.mbu Button{
+    font-size: 30px;
+    width: 20px;
+    color: #ffffff;
+}
+.mbu Button:hover{
+    background-color: aliceblue;
+    color: #000;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.ol2
+{
+    padding-left: 0;
+}
+.ol
+{
+    display: -webkit-inline-flex;
+    font-family: Merriweather;
+    color: aliceblue;
+    flex-shrink:initial;
+    padding: 15px;
+
+}
+.ol a{
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px;
+    font-family:Source Code Pro;
+    font-weight: 800;
+}
+.ol a:hover{
+    
+    background-color: aliceblue;
+    color: #000;
+    cursor: pointer;
+    border-radius: 5px;
+
+} 
+
+  .navbar-title {
+    font-family:"Libre Barcode 128 Text";
+    font-size: 45px;
+    margin: 10px ;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .navbar-items {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-item {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-item:hover {
+    color: #ccc;
+  }
+  
+  .navbar-menu {
+    position: relative;
+  }
+  
+  .navbar-menu i {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .navbar-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #021526;
+    padding: 10px;
+    /* margin-top: 20px; */
+    border-radius: 5px;
+  }
+  
+  .navbar-menu:hover .navbar-dropdown {
+    display: block;
+  }
+  
+  .navbar-dropdown .navbar-item {
+    display: block;
+    padding: 10px;
+    text-align: right;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-items {
+      display: none;
+    }
+  }
+  

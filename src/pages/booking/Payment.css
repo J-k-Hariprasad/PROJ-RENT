@@ -1,0 +1,107 @@
+.payment-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.min{
+    min-height: 100vh;
+    background-color: #0056b3;
+    align-items: center;
+}
+.payment-header h1 {
+    text-align: center;
+    font-size: 15px;
+    color: #333;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.payment-methods button {
+    flex: 1;
+    padding: 10px 0;
+    margin: 0 5px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.payment-methods button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.payment-methods button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+
+.payment-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.payment-form input,
+.payment-form select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.payment-form .input-group {
+    display: flex;
+}
+
+.payment-form .input-group input {
+    flex: 1;
+    margin-right: 5px;
+}
+
+.payment-form .input-group input:last-child {
+    margin-right: 0;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.paypal-button,
+.net-banking-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.paypal-button:hover,
+.net-banking-button:hover {
+    background-color: #0056b3;
+}
