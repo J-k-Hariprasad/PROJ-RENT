@@ -109,7 +109,9 @@ function Signup() {
                         <div className="modal-content">
                             <h2>{modalMessage}</h2>
                             <img src={modalImg} alt="Modal Icon" />
+                            <div className='pattu'>
                             <button onClick={closeModal}>Close</button>
+                            </div>
                         </div>
                     </Modal>
                 </div>

@@ -42,9 +42,8 @@ margin: 0%;
     color: aliceblue;
     font-family:Arsenal SC ;
 }
-.card1 h3{
+.card1 h5{
     color:#ffffff;
-    font-size: 20px;
 }
 
 /* ----------------------- */
@@ -89,6 +88,9 @@ margin: 0%;
     font-family: 15px;
     margin-top: 20px;
 
+}
+.ioio{
+    display: flex;
 }
 
 .star-rating {

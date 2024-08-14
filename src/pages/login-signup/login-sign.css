@@ -202,7 +202,7 @@ button:hover{
 .pattu {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-left: -30px;
 }
 
 .pattu button {

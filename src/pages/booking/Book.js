@@ -1,23 +1,24 @@
+
 // import '../booking/Book.css';
 // import log from '../assert/rent nroll logo.png';
 // import { useNavigate, useLocation } from 'react-router-dom';
-// import { useState, useEffect, useContext } from 'react';
-// import { UserContext } from '../context/UserContext'; 
+// import { useState, useEffect } from 'react';
 // import Modal from 'react-modal';
 // import axios from 'axios';
 // import suc from '../assert/login/loading.gif';
 // import er from '../assert/login/error.gif';
 
 // function Book() {
-//     const { userEmail } = useContext(UserContext);  // Get the userEmail from UserContext
 //     const navigate = useNavigate();
 //     const location = useLocation();
 //     const carPerDayPrice = location.state?.perday || 0;
+//     const car_id = location.state?.id || 0;
 
 //     const [pickDate, setPickDate] = useState('');
 //     const [dropDate, setDropDate] = useState('');
 //     const [username, setUsername] = useState('');
-//     // const [email, setEmail] = useState(userEmail);  // Initialize email with userEmail from context
+//     const [user_id, setUserid] = useState('');
+//     const [email, setEmail] = useState('');
 //     const [city, setCity] = useState('');
 //     const [occasion, setOccasion] = useState('');
 //     const [address, setAddress] = useState('');
@@ -30,6 +31,14 @@
 //     const [modalImg, setModalImg] = useState('');
 
 //     useEffect(() => {
+//         // Retrieve user data from localStorage when the component mounts
+//         const storedUser = JSON.parse(localStorage.getItem('user'));
+//         if (storedUser) {
+//             setUsername(storedUser.name || '');
+//             setUserid(storedUser.id || '');
+//             setEmail(storedUser.email || '');
+//         }
+
 //         if (pickDate && dropDate) {
 //             const pick = new Date(pickDate);
 //             const drop = new Date(dropDate);
@@ -54,13 +63,15 @@
 //         pickDate,
 //         dropDate,
 //         username,
-//         email: userEmail,  // Use the email from context
+//         email,
 //         city,
 //         occasion,
 //         address,
 //         phoneNumber,
 //         numDays,
-//         totalPrice
+//         totalPrice,
+//         car_id,
+//         user_id
 //     };
 
 //     const handleSubmit = async (e) => {
@@ -68,7 +79,6 @@
 
 //         try {
 //             const response = await axios.post('http://localhost:9001/bookings/bookingUser', bookingDetails);
-//             const user = response.data;
 //             setModalMessage(`Booking successful!`);
 //             setModalImg(suc);
 //             setModalIsOpen(true);
@@ -86,11 +96,12 @@
 //     const closeModal = () => {
 //         setModalIsOpen(false);
 //     };
+
 //     return (
 //         <div className='kq'>
 //             <div className='op'>
 //                 <div className='im'>
-//                     <img src={log} alt='loading'/>
+//                     <img src={log} alt='Rent N Roll Logo'/>
 //                 </div>
 //                 <div className='opp'>
 //                     <div className="signu">
@@ -208,10 +219,12 @@ function Book() {
     const navigate = useNavigate();
     const location = useLocation();
     const carPerDayPrice = location.state?.perday || 0;
+    const car_id = location.state?.id || 0;
 
     const [pickDate, setPickDate] = useState('');
     const [dropDate, setDropDate] = useState('');
     const [username, setUsername] = useState('');
+    const [user_id, setUserid] = useState('');
     const [email, setEmail] = useState('');
     const [city, setCity] = useState('');
     const [occasion, setOccasion] = useState('');
@@ -229,6 +242,7 @@ function Book() {
         const storedUser = JSON.parse(localStorage.getItem('user'));
         if (storedUser) {
             setUsername(storedUser.name || '');
+            setUserid(storedUser.id || '');
             setEmail(storedUser.email || '');
         }
 
@@ -262,7 +276,9 @@ function Book() {
         address,
         phoneNumber,
         numDays,
-        totalPrice
+        totalPrice,
+        car_id,
+        user_id
     };
 
     const handleSubmit = async (e) => {
@@ -273,6 +289,7 @@ function Book() {
             setModalMessage(`Booking successful!`);
             setModalImg(suc);
             setModalIsOpen(true);
+            console.log(bookingDetails);
             setTimeout(() => {
                 navigate('/pay', { state: { bookingDetails } });  // Navigate to payment page with booking details
             }, 2000);

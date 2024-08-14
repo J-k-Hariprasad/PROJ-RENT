@@ -7,9 +7,7 @@ import Footer from './Footer';
 import Navi from './nav/Navi';
 import Footerabv from './Footerabv';
 
-function Home() {
-   
-      
+function Home() {   
     return (
         <div>
                 <Navi/>
@@ -23,5 +21,4 @@ function Home() {
         </div>
     );
 }
-
 export default Home;

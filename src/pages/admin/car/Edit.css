@@ -1,4 +1,4 @@
-.modal {
+.modal1 {
     position: fixed;
     top: 0;
     left: 0;
@@ -10,38 +10,42 @@
     align-items: center;
 }
 
-.modal-content {
+.modal-content1 {
     background-color: white;
     padding: 20px;
-    border-radius: 5px;
-    text-align: center;
+    display: flex;
+    gap: 20px;
 }
-.modal p{
-    font-family: monospace;
+
+.car-preview1 {
+    width: 40%;
+}
+
+.edit-form1 {
+    width: 60%;
+}
+.edit-form1 input{
+    
+    width: 90%;
+}
+.edit-form1 label {
+    font-size: 20px;
+}
+
+.modal-buttons1 {
+    margin-top: 20px;
+    display: flex;
 }
 
 .confirm-button {
     background-color: green;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 10px;
     margin-right: 10px;
-    margin: 0%;
 }
 
 .cancel-button {
     background-color: red;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 0%;
-}
-#kllk{
-    display: flex;
-   
-    margin-left:-25% ;
+    padding: 10px;
 }

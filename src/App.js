@@ -13,6 +13,9 @@ import Payment from './pages/booking/Payment';
 import { UserProvider } from './pages/context/UserContext'; // Import UserProvider
 import CarAdd from './pages/admin/car/CarAdd';
 import ViewCar from './pages/admin/car/ViewCar';
+import AdminReview from './pages/admin/Reviews/AdminReview';
+import RemoveCar from './pages/admin/car/RemoveCar';
+import EditCar from './pages/admin/car/EditCar';
 
 
 function App() {
@@ -35,6 +38,9 @@ function App() {
                         <Route path='/pay' element={<Payment/>}/>
                         <Route path='/caradd' element={<CarAdd/>}/>
                         <Route path='/carview' element={<ViewCar/>}/>
+                        <Route path='/reviews' element={<AdminReview/>}/>
+                        <Route path='/removecar' element={<RemoveCar/>}/>
+                        <Route path='/editcar' element={<EditCar/>}/>
 
                     </Routes>
                 </BrowserRouter>
