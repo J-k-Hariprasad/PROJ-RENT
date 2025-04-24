@@ -5,10 +5,11 @@
   }
   
   .dashboard-container {
+    background-color: #03346E;
     padding: 20px 20px 20px 220px; 
     flex-grow: 1;
-    margin-left: 80px;
-    margin-top: 60px; 
+    margin-left: 30px; 
+    margin-top: 20px; 
   }
   .dashboard-container1 {
    background-color: #03346E;

@@ -3,7 +3,7 @@ import { Box, Typography, Container, Grid, Paper, Table, TableBody, TableCell, T
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, BarChart, Bar, PieChart, Pie, Cell } from 'recharts';
 import axios from 'axios';
 
-const COLORS = ['#8884d8', '#82ca9d', '#ff6327'];
+const COLORS = ['#072171', '#044694', '#0089f8'];
 
 const lineChartData = [
   { name: 'Jan', Bookings: 400, expenses: 2400 },
@@ -96,7 +96,7 @@ function Dash() {
               <YAxis />
               <Tooltip />
               <Legend />
-              <Bar dataKey="value" fill="#8884d8" />
+              <Bar dataKey="value" fill="#0089f8" />
             </BarChart>
           </Paper>
         </Grid>
@@ -162,10 +162,10 @@ function Dash() {
               <Table>
                 <TableHead>
                   <TableRow>
-                    <TableCell>ID</TableCell>
+                    <TableCell>Booking ID</TableCell>
+                    <TableCell>User ID</TableCell>
                     <TableCell>Pickup</TableCell>
                     <TableCell>Drop</TableCell>
-                    <TableCell>NAME</TableCell>
                     <TableCell>Num. of Days</TableCell>
                     <TableCell>Occasion</TableCell>
                     <TableCell>Amount</TableCell>
@@ -175,12 +175,12 @@ function Dash() {
                   {recentTransactions.map((transaction) => (
                     <TableRow key={transaction.id}>
                       <TableCell>{transaction.id}</TableCell>
-                      <TableCell>{transaction.pick_date}</TableCell>
-                      <TableCell>{transaction.drop_date}</TableCell>
-                      <TableCell>{transaction.username}</TableCell>
-                      <TableCell>{transaction.num_days}</TableCell>
+                      <TableCell>{transaction.user_id}</TableCell>
+                      <TableCell>{transaction.pickDate}</TableCell>
+                      <TableCell>{transaction.dropDate}</TableCell>
+                      <TableCell>{transaction.numDays}</TableCell>
                       <TableCell>{transaction.occasion}</TableCell>
-                      <TableCell>₹{transaction.total_price}</TableCell>
+                      <TableCell>₹{transaction.totalPrice}</TableCell>
                     </TableRow>
                   ))}
                 </TableBody>

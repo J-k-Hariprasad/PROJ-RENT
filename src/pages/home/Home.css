@@ -26,7 +26,7 @@
     font-weight: 700;
     font-family:Source Code Pro;
     color: #ffffff;
-    background-color: #062544;
+    background-color: #002ca5;
     font-size: 40px;
     text-align: center;
 }
@@ -34,23 +34,24 @@
     margin: 10px;
    
     border-radius: 10px;
-    background-color: #021526d6;
+    background-color: #ffffffd6;
     box-shadow: 0 4px 8px rgba(179, 19, 19, 0.1);
     text-align: center;
     padding: 20px;
     width: 250px;
+    color: #333;
     position: relative;
 }
 .card12:hover{
-    background-color: #03346E;
-    color: aliceblue;
+    /* background-color: #03346E; */
+    /* color: aliceblue; */
 }
 .card12 p{
     color: rgb(255, 255, 255);
     font-family:Source Code Pro;
 }
 .card12 h3{
-    color:#ffffff;
+    color:#000000;
     font-family:Source Code Pro;
 }
 
@@ -66,6 +67,7 @@ img {
 
 .details p {
     margin: 5px 0;
+    color: #333;
 }
 
 .book-now {

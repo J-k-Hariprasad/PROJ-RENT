@@ -197,7 +197,8 @@ button:hover{
 	/* font-family:Source Code Pro; */
 }
 .modal-content img{
-	width:100px;
+	width:400px;
+	height: 300px;
 }
 .pattu {
     display: flex;

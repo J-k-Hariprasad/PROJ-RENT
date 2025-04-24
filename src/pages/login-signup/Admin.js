@@ -1,5 +1,5 @@
 import '../login-signup/login-sign.css'
-import tik from '../assert/tick-1024.webp'
+import tik from '../assert/login/tick-1024.webp'
 import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 function Admin()
