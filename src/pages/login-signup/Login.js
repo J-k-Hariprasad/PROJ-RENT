@@ -122,7 +122,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState, useContext } from 'react';
 import React from 'react';
 import Modal from 'react-modal';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import log from '../assert/rent nroll logo.png';
 import suc from '../assert/login/loading.gif';
 import er from '../assert/login/error.gif';
@@ -132,7 +132,7 @@ import { UserContext } from '../context/UserContext';
 Modal.setAppElement('#root');
 
 function Login() {
-    const { seetUserEmail } = useContext(UserContext); 
+    // const { seetUserEmail } = useContext(UserContext); 
 
     const navigate = useNavigate();
     const [userMail, setUserMail] = useState('');
@@ -140,7 +140,7 @@ function Login() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [modalMessage, setModalMessage] = useState('');
     const [modalImg, setModalImg] = useState('');
-    const [message, setMessage] = useState('');
+    // const [message, setMessage] = useState('');
 
     const logindata = { email: userMail, pass: password };
 

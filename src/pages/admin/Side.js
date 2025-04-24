@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, useNavigate} from 'react-router-dom';
+import {  useNavigate} from 'react-router-dom';
 import './Side.css'; // Import the CSS file for the sidebar
 import { GrFormView } from "react-icons/gr";
 const Side = () => {

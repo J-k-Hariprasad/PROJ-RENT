@@ -285,7 +285,7 @@ function Book() {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:9001/bookings/bookingUser', bookingDetails);
+            // const response = await axios.post('http://localhost:9001/bookings/bookingUser', bookingDetails);
             setModalMessage(`Booking successful!`);
             setModalImg(suc);
             setModalIsOpen(true);

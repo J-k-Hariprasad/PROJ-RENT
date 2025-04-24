@@ -188,7 +188,7 @@ import Navi from '../home/nav/Navi';
 import axios from 'axios';
 
 function Journey() {
-    const [user_id, setUserid] = useState('');
+    // const [user_id, setUserid] = useState('');
     const [showModal, setShowModal] = useState(false);
     const [selectedTrip, setSelectedTrip] = useState(null);
     const [trips, setTrips] = useState([]);
